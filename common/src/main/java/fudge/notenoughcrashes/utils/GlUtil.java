@@ -10,7 +10,6 @@ public class GlUtil {
 
 //        // Reset texture
         RenderSystem.bindTexture(0);
-        RenderSystem.disableTexture();
 
         // Reset depth
         RenderSystem.disableDepthTest();
@@ -32,7 +31,6 @@ public class GlUtil {
         RenderSystem.logicOp(GlStateManager.LogicOp.COPY);
         // Disable lightmap
         RenderSystem.activeTexture(GL13.GL_TEXTURE1);
-        RenderSystem.disableTexture();
 
         RenderSystem.activeTexture(GL13.GL_TEXTURE0);
 
@@ -51,8 +49,7 @@ public class GlUtil {
         RenderSystem.lineWidth(1.0F);
         RenderSystem.polygonMode(GL11.GL_FRONT, GL11.GL_FILL);
         RenderSystem.polygonMode(GL11.GL_BACK, GL11.GL_FILL);
-//
-        RenderSystem.enableTexture();
+
         RenderSystem.clearDepth(1.0D);
         RenderSystem.enableDepthTest();
         RenderSystem.depthFunc(515);

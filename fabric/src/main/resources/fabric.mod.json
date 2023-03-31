@@ -22,8 +22,8 @@
     "modmenu": [ "fudge.notenoughcrashes.fabric.config.ModMenuConfigIntegration" ]
   },
   "depends": {
-    "minecraft": ">=1.17",
-    "fabricloader": ">=0.12.0"
+    "minecraft": "1.19.4",
+    "fabricloader": ">=0.14.17"
   },
   "authors": [
     "Fudge",

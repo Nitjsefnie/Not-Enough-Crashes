@@ -68,13 +68,13 @@ task addTestFabricMod(type: Copy) {
     into "fabric/run/mods"
 }
 
-task addTestForgeMod(type: Copy) {
-    dependsOn project(":TestForgeMod").tasks.build
-//   Copy dev jar because there is no support for automatic remapping
-    from "TestForgeMod/build/libs/nec_testmod-1.0.0-dev-shadow.jar"
-    into "forge/run/mods"
-}
+//task addTestForgeMod(type: Copy) {
+//    dependsOn project(":TestForgeMod").tasks.build
+////   Copy dev jar because there is no support for automatic remapping
+//    from "TestForgeMod/build/libs/nec_testmod-1.0.0-dev-shadow.jar"
+//    into "forge/run/mods"
+//}
 
 task addTestMods {
-    dependsOn addTestFabricMod, addTestForgeMod
+    dependsOn addTestFabricMod//, addTestForgeMod
 }

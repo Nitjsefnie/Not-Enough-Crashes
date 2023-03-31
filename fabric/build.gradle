@@ -31,8 +31,8 @@ dependencies {
     modRuntimeOnly libs.fabric.api
 
     // For config modmenu integration.
-    modCompileOnly("com.terraformersmc:modmenu:5.0.2")
-    modRuntimeOnly("com.terraformersmc:modmenu:5.0.2")
+    modCompileOnly("com.terraformersmc:modmenu:$modmenu_version")
+    modRuntimeOnly("com.terraformersmc:modmenu:$modmenu_version")
 
     // Uncomment to add the test mod at runtime
 //    runtimeOnly project(path: ":TestFabricMod", configuration: "namedElements")
